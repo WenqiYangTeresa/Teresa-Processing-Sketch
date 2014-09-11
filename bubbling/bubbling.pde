@@ -24,9 +24,9 @@ void draw ()
 {
 
   // this fades out the previous stuff. add a "screen" on the top
-  noStroke();
-  fill(190, 254, 183, 0);
-  rect(0, 0, width, height);
+  //noStroke();
+  //fill(190, 254, 183, 0);
+  //rect(0, 0, width, height); //this fades out the stroke of circles even it is completely transparent
   
   //distance the buggie is from the mouse
   float dx = (mouseX-x1)/10.; //the smaller the denominator the closer the buggie is
@@ -66,6 +66,7 @@ void draw ()
   
   //float w= random(1,15);
   //float h= random(1,15);
+  noStroke(); //i do this instead of doing the blocking screen
   fill(r,g,b,weight); //color orange; alpha is depending on weight also
   ellipse(x2,y2,weight,weight); //make the none variables more random; has same movement as line (x2,y2)
   

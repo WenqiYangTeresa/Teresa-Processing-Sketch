@@ -42,8 +42,8 @@ void draw ()
   
   
   // this adds the distance and some drunkness to the position(movement)
-  x2 = x1+random(min(0, dx), max(0, dx))+drunkx;  //follow mouse horizontally
-  y2 = y1+random(min(0, dy), max(0, dy))+drunky;  //follow mouse vertically
+  //x2 = x1+random(min(0, dx), max(0, dx))+drunkx;  //follow mouse horizontally
+  //y2 = y1+random(min(0, dy), max(0, dy))+drunky;  //follow mouse vertically
   
   //set up range for movement (x1,x2,y1,y2)
   //x2= x1+random(-20,20);
