@@ -1,21 +1,27 @@
 //try a smooth movement with curve
 
- float w,h,r,g,b,y1,x1,y2,x2; //global variables
+ /*float w,h,r,g,b,y1,x1,y2,x2; //global variables*/
  
-
+ color[] co = new color[7] ;
+ color[0] =#FF0000;
+ color[1] =#E86900;
+ color[2] =#A50CE8;
+ color[3] =#005CFF;
+ color[4] =#00E8FF;
+ color[5] =#00FF0E;
+ color[6] =#FFD00D;
  
-
 void setup()
 {
   size(1000,800);  
   
-  background(190,254,183);
+  background(255);
   
   x1= width/2;
   y1= height/2;
   //let the doodle start from center. width and height of canvas
  //x1 and y1 are constant
-  
+ 
 }
 
 
@@ -53,10 +59,10 @@ void draw ()
   //line(x1,y1,x2,y2);
   
   //set up color range for variables
-  r= random(100,180);
+  /*r= random(100,180);
   g= random(30,255);
   b= random(130,240);
-  
+  */
   
   //make a trace
   //noFill(); //dont draw a fill
@@ -67,7 +73,7 @@ void draw ()
   //float w= random(1,15);
   //float h= random(1,15);
   noStroke(); //i do this instead of doing the blocking screen
-  fill(r,g,b,weight); //color orange; alpha is depending on weight also
+  fill(co[],g,b,weight); //color orange; alpha is depending on weight also
   ellipse(x2,y2,weight,weight); //make the none variables more random; has same movement as line (x2,y2)
   
   
